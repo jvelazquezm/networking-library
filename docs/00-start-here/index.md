@@ -7,17 +7,11 @@ sidebar_label: How to use this library
 
 # How to use this library
 
-The Networking Library is an open, community-maintained map of what is worth learning about computer networks and telecommunications — from how the Internet works to Segment Routing, 5G and AI data centre networks.
+The Networking Library is an open, community-maintained map of what is worth learning about computer networks and telecommunications.
 
-It does not try to replace books, courses or standards. It **organises** them: every topic explains what to learn, links the authoritative specifications, lists the best resources — **free and open resources first** — and suggests a hands-on lab.
+It does not try to replace books, courses or standards. It **organises** them: every topic explains what to learn, links the specifications, lists the best resources and suggests a hands-on lab.
 
-## Vendor-neutral by design
-
-Topics are organised by technology, not by exam or vendor. Standards come first; vendor-specific protocols (for example HSRP, EIGRP or DMVPN) are included when they are widely deployed, help explain a concept or led to a standard, and are clearly marked as such. The [certification maps](../14-reference/certifications/index.md) show how Cisco, Juniper, Nokia, Arista, Huawei and vendor-neutral certifications map onto the library.
-
-## How it is organised
-
-136 topics in thirteen sections, ordered roughly from the bottom of the stack to the top and from fundamentals to specialised domains:
+## Index
 
 | # | Section | Covers |
 | --- | --- | --- |
@@ -35,18 +29,6 @@ Topics are organised by technology, not by exam or vendor. Standards come first;
 | 12 | [Network Operations and Assurance](../12-operations/index.md) | Troubleshooting methodology, monitoring with SNMP, syslog and flow data, observability stacks, active measurement, packet capture and network design. |
 | 13 | [Automation, Programmability and AI](../13-automation/index.md) | Management approaches, data formats, REST APIs, Ansible and Terraform, Python, templating and source of truth, YANG/NETCONF/RESTCONF, gNMI, on-box automation, NetDevOps and AI. |
 | 14 | [Reference](../14-reference/index.md) | Standards bodies, books, courses, labs, community and certification maps. |
-
-## Anatomy of a topic page
-
-1. **Level** — Beginner, Intermediate or Advanced.
-2. **Overview** — what the topic is and why it matters.
-3. **Key concepts** — the checklist of ideas you should be able to explain.
-4. **Before you start** — topics to read first.
-5. **Standards and specifications** — the primary sources (RFCs, IEEE, 3GPP, ITU, O-RAN…).
-6. **Learning resources** — free resources first, then paid, sorted by level.
-7. **Bibliography** — books, free ones first.
-8. **Hands-on lab** — an exercise to turn reading into understanding.
-9. **Related topics** — where to go next.
 
 ## Levels
 
