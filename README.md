@@ -2,7 +2,7 @@
 
 An open, vendor-neutral and community-maintained library to learn computer networks and telecommunications — from first principles to expert level, including Segment Routing, 5G, Open RAN and cloud native networking.
 
-**Live site:** https://jvelazquezm.github.io/networking-library/
+**Live site:** https://jvelazquezm.github.io/networking-library/ · **En español:** https://jvelazquezm.github.io/networking-library/es/
 
 The library does not try to replace books, courses or standards. It **organises** them: every topic explains what to learn, links the authoritative specifications, lists the best resources — **free and open resources first** — and suggests a hands-on lab.
 
@@ -30,14 +30,19 @@ The library does not try to replace books, courses or standards. It **organises*
 
 Every topic page uses the same layout: **Overview → Key concepts → Before you start → Standards → Learning resources → Bibliography → Hands-on lab → Related topics**.
 
+## Languages
+
+The site is published in **English** (source, `docs/`) and **Spanish** (`i18n/es/`), with a language selector in the navbar. See [CONTRIBUTING.md](CONTRIBUTING.md#languages-english-and-spanish) for how to keep both in sync.
+
 ## Run it locally
 
 Requires Node.js 20 or later.
 
 ```bash
 npm install
-npm start        # development server at http://localhost:3000/networking-library/
-npm run build    # production build; fails if any internal link is broken
+npm start        # development server (English) at http://localhost:3000/networking-library/
+npm start -- --locale es   # development server in Spanish
+npm run build    # production build of both languages; fails if any internal link is broken
 ```
 
 ## Publish on GitHub Pages
@@ -58,9 +63,10 @@ docs/                     All library content (Markdown)
   00-start-here/          How to use, learning paths, glossary, contribution guide
   01-fundamentals/ ...    One folder per section; index.md is the section overview
   14-reference/           Standards bodies, books, courses, labs, community, certification maps
+i18n/es/                  Spanish translation (same structure as docs/), navbar, footer and UI strings
 templates/                Template for new topic pages
 src/pages/index.js        Homepage
-src/data/home.js          Section and path cards shown on the homepage
+src/data/home.js          Homepage text and cards in both languages
 .github/workflows/        Deploy to Pages, build check and link checker
 ```
 

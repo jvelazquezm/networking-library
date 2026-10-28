@@ -16,6 +16,13 @@ Thanks for helping build The Networking Library. The full guide is published on 
 3. **Link, never copy.** No PDFs or copied text from copyrighted books, papers or courses.
 4. **State the version** (release, edition or year) for fast-moving areas.
 
+## Languages: English and Spanish
+
+- English pages (the source) live in `docs/`.
+- Spanish pages live in `i18n/es/docusaurus-plugin-content-docs/current/`, mirroring the same paths.
+- Update both languages in the same pull request when you can. If you only write one, say so and someone will translate it — the pull request check lists English pages changed without their Spanish counterpart.
+- Navbar, footer and interface strings are in `i18n/es/docusaurus-theme-classic/` and `i18n/es/code.json`; homepage text is in `src/data/home.js`.
+
 ## Formats
 
 Learning resources table row:

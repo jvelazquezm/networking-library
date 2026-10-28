@@ -24,6 +24,15 @@ We want this to be a library anyone can use without paying.
 3. **No affiliate links.** Link directly to the publisher or the product page.
 4. **Link, never copy.** Do not upload or paste copyrighted books, papers or courses.
 
+## Languages
+
+The library is published in English and Spanish.
+
+- **English is the source language.** English pages live in `docs/`.
+- **Spanish translations** live in `i18n/es/docusaurus-plugin-content-docs/current/`, with exactly the same folder structure.
+- **When you change a page in one language, update the other one too.** If you cannot, say so in the pull request and someone else will translate it. Pull requests show a reminder when an English page changes without its Spanish counterpart.
+- If a page has no translation yet, the Spanish site shows the English version.
+
 ## Adding a resource
 
 Add a row to the **Learning resources** table of the topic page:

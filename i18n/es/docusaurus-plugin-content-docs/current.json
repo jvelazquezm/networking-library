@@ -1,0 +1,74 @@
+{
+  "sidebar.librarySidebar.category.01 · Network Fundamentals": {
+    "message": "01 · Fundamentos de redes",
+    "description": "The label for category '01 · Network Fundamentals' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.02 · Switching and Ethernet": {
+    "message": "02 · Conmutación y Ethernet",
+    "description": "The label for category '02 · Switching and Ethernet' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.03 · Wireless and IoT": {
+    "message": "03 · Redes inalámbricas e IoT",
+    "description": "The label for category '03 · Wireless and IoT' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.04 · IP Routing": {
+    "message": "04 · Enrutamiento IP",
+    "description": "The label for category '04 · IP Routing' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.05 · IP Services": {
+    "message": "05 · Servicios IP",
+    "description": "The label for category '05 · IP Services' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.06 · WAN, VPNs and Overlays": {
+    "message": "06 · WAN, VPN y overlays",
+    "description": "The label for category '06 · WAN, VPNs and Overlays' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.07 · Service Provider and Transport Networks": {
+    "message": "07 · Redes de operador y transporte",
+    "description": "The label for category '07 · Service Provider and Transport Networks' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.08 · Mobile Networks": {
+    "message": "08 · Redes móviles",
+    "description": "The label for category '08 · Mobile Networks' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.09 · Data Center, Virtualization and Cloud": {
+    "message": "09 · Centro de datos, virtualización y cloud",
+    "description": "The label for category '09 · Data Center, Virtualization and Cloud' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.10 · Transport and Application Protocols": {
+    "message": "10 · Protocolos de transporte y aplicación",
+    "description": "The label for category '10 · Transport and Application Protocols' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.11 · Security": {
+    "message": "11 · Seguridad",
+    "description": "The label for category '11 · Security' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.12 · Network Operations and Assurance": {
+    "message": "12 · Operación y aseguramiento de redes",
+    "description": "The label for category '12 · Network Operations and Assurance' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.13 · Automation, Programmability and AI": {
+    "message": "13 · Automatización, programabilidad e IA",
+    "description": "The label for category '13 · Automation, Programmability and AI' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.00 · Start here": {
+    "message": "00 · Empieza aquí",
+    "description": "The label for category '00 · Start here' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.Learning paths": {
+    "message": "Rutas de aprendizaje",
+    "description": "The label for category 'Learning paths' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.14 · Reference": {
+    "message": "14 · Referencia",
+    "description": "The label for category '14 · Reference' in sidebar 'librarySidebar'"
+  },
+  "sidebar.librarySidebar.category.Certification maps": {
+    "message": "Mapas de certificación",
+    "description": "The label for category 'Certification maps' in sidebar 'librarySidebar'"
+  },
+  "version.label": {
+    "message": "Siguiente",
+    "description": "The label for version current"
+  }
+}

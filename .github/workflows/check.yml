@@ -39,7 +39,7 @@ jobs:
             --exclude ieeexplore.ieee.org
             --accept 200,204,403,429
             --exclude-path node_modules
-            'docs/**/*.md' README.md
+            'docs/**/*.md' 'i18n/**/*.md' README.md
           fail: ${{ github.event_name == 'pull_request' }}
       - name: Open an issue with broken links (scheduled and manual runs)
         if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
@@ -48,3 +48,33 @@ jobs:
           title: Broken external links found
           content-filepath: ./lychee/out.md
           labels: broken-links
+
+  translations:
+    name: Translation reminder
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: List pages changed in only one language
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          changed=$(git diff --name-only "$base"...HEAD)
+          es_prefix="i18n/es/docusaurus-plugin-content-docs/current/"
+          missing=0
+          for f in $(echo "$changed" | grep -E '^docs/.*\.md$' || true); do
+            twin="${es_prefix}${f#docs/}"
+            if ! echo "$changed" | grep -qx "$twin"; then
+              echo "::warning file=$f::English page changed without updating its Spanish version ($twin)"
+              missing=1
+            fi
+          done
+          for f in $(echo "$changed" | grep -E "^${es_prefix}.*\.md$" || true); do
+            twin="docs/${f#${es_prefix}}"
+            if ! echo "$changed" | grep -qx "$twin"; then
+              echo "::warning file=$f::Spanish page changed without updating its English version ($twin)"
+              missing=1
+            fi
+          done
+          if [ "$missing" = 0 ]; then echo "Both languages are in sync for this pull request."; fi

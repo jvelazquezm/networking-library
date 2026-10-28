@@ -2,25 +2,32 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
-import {sections, paths, topicCount} from '../data/home';
+import {HOME} from '../data/home';
+
+// Homepage text and cards for each language live in src/data/home.js.
+function useHome() {
+  const {i18n} = useDocusaurusContext();
+  return HOME[i18n.currentLocale] ?? HOME.en;
+}
 
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
+  const {ui} = useHome();
   return (
     <header className={styles.hero}>
       <div className="container">
-        <p className={styles.eyebrow}>Open · Vendor-neutral · Community-maintained</p>
+        <p className={styles.eyebrow}>{ui.eyebrow}</p>
         <h1 className={styles.title}>{siteConfig.title}</h1>
         <p className={styles.tagline}>{siteConfig.tagline}</p>
         <div className={styles.actions}>
           <Link className="button button--primary button--lg" to="/library/start-here">
-            Start here
+            {ui.start}
           </Link>
           <Link className="button button--secondary button--lg" to="/library/start-here/learning-paths">
-            Pick a learning path
+            {ui.paths}
           </Link>
           <Link className="button button--secondary button--lg" to="/library/reference/certifications">
-            Certification maps
+            {ui.certs}
           </Link>
         </div>
       </div>
@@ -29,22 +36,21 @@ function Hero() {
 }
 
 function SectionGrid() {
+  const {ui, sections, topicCount} = useHome();
   return (
     <section className={styles.block}>
       <div className="container">
-        <h2 className={styles.blockTitle}>Browse the library</h2>
-        <p className={styles.blockLead}>
-          {topicCount} topics in thirteen sections, from the basics to expert level, plus a reference
-          shelf. Every topic follows the same layout — overview, key concepts, standards, free
-          resources first, bibliography and a hands-on lab.
-        </p>
+        <h2 className={styles.blockTitle}>{ui.browse}</h2>
+        <p className={styles.blockLead}>{ui.browseLead.replace('{count}', topicCount)}</p>
         <div className={styles.grid}>
           {sections.map((s) => (
             <Link key={s.slug} to={`/library/${s.slug}`} className={styles.card}>
               <span className={styles.cardNum}>{s.num}</span>
               <h3 className={styles.cardTitle}>{s.title}</h3>
               <p className={styles.cardText}>{s.blurb}</p>
-              {s.count > 0 && <p className={styles.cardCount}>{s.count} topics</p>}
+              {s.count > 0 && (
+                <p className={styles.cardCount}>{ui.topics.replace('{count}', s.count)}</p>
+              )}
             </Link>
           ))}
         </div>
@@ -54,14 +60,12 @@ function SectionGrid() {
 }
 
 function Paths() {
+  const {ui, paths} = useHome();
   return (
     <section className={`${styles.block} ${styles.alt}`}>
       <div className="container">
-        <h2 className={styles.blockTitle}>Learning paths</h2>
-        <p className={styles.blockLead}>
-          Curated sequences that cut across sections. Follow one end to end, or use it as a
-          checklist.
-        </p>
+        <h2 className={styles.blockTitle}>{ui.pathsTitle}</h2>
+        <p className={styles.blockLead}>{ui.pathsLead}</p>
         <div className={styles.paths}>
           {paths.map((p) => (
             <Link key={p.slug} to={`/library/start-here/learning-paths/${p.slug}`} className={styles.path}>
@@ -78,8 +82,9 @@ function Paths() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  const {ui} = useHome();
   return (
-    <Layout title="Home" description={siteConfig.tagline}>
+    <Layout title={ui.home} description={siteConfig.tagline}>
       <Hero />
       <main>
         <SectionGrid />

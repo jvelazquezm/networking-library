@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "The Networking Library",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo de The Networking Library",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Library": {
+    "message": "Biblioteca",
+    "description": "Navbar item with label Library"
+  },
+  "item.label.Learning paths": {
+    "message": "Rutas",
+    "description": "Navbar item with label Learning paths"
+  },
+  "item.label.Certifications": {
+    "message": "Certificaciones",
+    "description": "Navbar item with label Certifications"
+  },
+  "item.label.Reference": {
+    "message": "Referencia",
+    "description": "Navbar item with label Reference"
+  },
+  "item.label.Glossary": {
+    "message": "Glosario",
+    "description": "Navbar item with label Glossary"
+  },
+  "item.label.Contribute": {
+    "message": "Contribuir",
+    "description": "Navbar item with label Contribute"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

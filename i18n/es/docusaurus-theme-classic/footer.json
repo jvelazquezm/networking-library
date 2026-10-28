@@ -1,0 +1,62 @@
+{
+  "link.title.Start": {
+    "message": "Empieza",
+    "description": "The title of the footer links column with title=Start in the footer"
+  },
+  "link.title.Reference": {
+    "message": "Referencia",
+    "description": "The title of the footer links column with title=Reference in the footer"
+  },
+  "link.title.Community": {
+    "message": "Comunidad",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.How to use this library": {
+    "message": "Cómo usar esta biblioteca",
+    "description": "The label of footer link with label=How to use this library linking to /library/start-here"
+  },
+  "link.item.label.Learning paths": {
+    "message": "Rutas de aprendizaje",
+    "description": "The label of footer link with label=Learning paths linking to /library/start-here/learning-paths"
+  },
+  "link.item.label.Glossary": {
+    "message": "Glosario",
+    "description": "The label of footer link with label=Glossary linking to /library/start-here/glossary"
+  },
+  "link.item.label.Certification maps": {
+    "message": "Mapas de certificación",
+    "description": "The label of footer link with label=Certification maps linking to /library/reference/certifications"
+  },
+  "link.item.label.Standards bodies": {
+    "message": "Organismos de estandarización",
+    "description": "The label of footer link with label=Standards bodies linking to /library/reference/standards-bodies"
+  },
+  "link.item.label.Books": {
+    "message": "Libros",
+    "description": "The label of footer link with label=Books linking to /library/reference/books"
+  },
+  "link.item.label.Courses & videos": {
+    "message": "Cursos y vídeos",
+    "description": "The label of footer link with label=Courses & videos linking to /library/reference/courses-and-videos"
+  },
+  "link.item.label.Labs & tools": {
+    "message": "Laboratorios y herramientas",
+    "description": "The label of footer link with label=Labs & tools linking to /library/reference/labs-and-tools"
+  },
+  "link.item.label.Contribute": {
+    "message": "Contribuir",
+    "description": "The label of footer link with label=Contribute linking to /library/start-here/contributing"
+  },
+  "link.item.label.Community": {
+    "message": "Comunidad",
+    "description": "The label of footer link with label=Community linking to /library/reference/community"
+  },
+  "link.item.label.Suggest a resource": {
+    "message": "Proponer un recurso",
+    "description": "The label of footer link with label=Suggest a resource linking to https://github.com/jvelazquezm/networking-library/issues/new/choose"
+  },
+  "copyright": {
+    "message": "Contenido bajo licencia CC BY-SA 4.0 · Código bajo MIT · Hecho con Docusaurus",
+    "description": "The footer copyright"
+  }
+}

@@ -53,3 +53,15 @@
     overflow-x: auto;
   }
 }
+
+/* Keep navbar links on one line; the longer Spanish labels must not wrap */
+.navbar__item.navbar__link {
+  white-space: nowrap;
+}
+
+/* On medium screens show only the logo, so the menu and language selector fit */
+@media (max-width: 1360px) {
+  .navbar__title {
+    display: none;
+  }
+}

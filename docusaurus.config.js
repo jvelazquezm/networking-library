@@ -8,11 +8,17 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const GITHUB_USER = 'jvelazquezm';
 const REPO_NAME = 'networking-library';
 
+// Docusaurus builds each language separately; this tells us which one is being built.
+const LOCALE = process.env.DOCUSAURUS_CURRENT_LOCALE ?? 'en';
+const TAGLINES = {
+  en: 'An open, vendor-neutral library to learn computer networks and telecommunications — from first principles to expert level: Segment Routing, 5G, Open RAN and cloud native.',
+  es: 'Una biblioteca abierta y neutral para aprender redes y telecomunicaciones — desde los fundamentos hasta nivel experto: Segment Routing, 5G, Open RAN y cloud native.',
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'The Networking Library',
-  tagline:
-    'An open, vendor-neutral library to learn computer networks and telecommunications — from first principles to expert level: Segment Routing, 5G, Open RAN and cloud native.',
+  tagline: TAGLINES[LOCALE] ?? TAGLINES.en,
   favicon: 'img/favicon.svg',
 
   url: `https://${GITHUB_USER}.github.io`,
@@ -28,9 +34,15 @@ const config = {
     hooks: {onBrokenMarkdownLinks: 'throw'},
   },
 
+  // English is the source language. Spanish translations live in i18n/es/.
+  // A page without a Spanish translation is shown in English.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es'],
+    localeConfigs: {
+      en: {label: 'English', htmlLang: 'en'},
+      es: {label: 'Español', htmlLang: 'es'},
+    },
   },
 
   presets: [
@@ -42,6 +54,7 @@ const config = {
           routeBasePath: 'library',
           sidebarPath: './sidebars.js',
           editUrl: `https://github.com/${GITHUB_USER}/${REPO_NAME}/edit/main/`,
+          editLocalizedFiles: true,
           showLastUpdateTime: true,
         },
         blog: false,
@@ -58,7 +71,7 @@ const config = {
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
-        language: ['en'],
+        language: ['en', 'es'],
         docsRouteBasePath: 'library',
         indexBlog: false,
         highlightSearchTermsOnTargetPage: true,
@@ -81,6 +94,7 @@ const config = {
           {to: '/library/reference', label: 'Reference', position: 'left'},
           {to: '/library/start-here/glossary', label: 'Glossary', position: 'left'},
           {to: '/library/start-here/contributing', label: 'Contribute', position: 'right'},
+          {type: 'localeDropdown', position: 'right'},
           {
             href: `https://github.com/${GITHUB_USER}/${REPO_NAME}`,
             label: 'GitHub',
@@ -121,7 +135,10 @@ const config = {
             ],
           },
         ],
-        copyright: `Content licensed under CC BY-SA 4.0 · Code under MIT · Built with Docusaurus`,
+        copyright:
+          LOCALE === 'es'
+            ? 'Contenido bajo licencia CC BY-SA 4.0 · Código bajo MIT · Hecho con Docusaurus'
+            : 'Content licensed under CC BY-SA 4.0 · Code under MIT · Built with Docusaurus',
       },
       prism: {
         theme: prismThemes.github,
