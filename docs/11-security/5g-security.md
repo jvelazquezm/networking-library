@@ -29,7 +29,7 @@ sidebar_position: 15
 ## Standards and specifications
 
 - [3GPP TS 33.501 — Security architecture and procedures for the 5G System](https://www.3gpp.org/ftp/Specs/archive/33_series/33.501)
-- [ENISA — 5G threat landscape](https://www.enisa.europa.eu/topics/cybersecurity-of-emerging-technologies/5g)
+- [ENISA — EU Agency for Cybersecurity (5G threat landscape reports)](https://www.enisa.europa.eu/)
 
 ## Learning resources
 

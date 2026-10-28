@@ -44,7 +44,7 @@ Large networks use BGP for far more than Internet connectivity: it carries VPN r
 | [RIPE Labs](https://labs.ripe.net/) | Articles | Intermediate | Free |
 | [MANRS — Mutually Agreed Norms for Routing Security](https://manrs.org/) | Guide | Intermediate | Free |
 | [ipSpace.net blog (Ivan Pepelnjak)](https://blog.ipspace.net/) | Blog | Advanced | Free |
-| [NANOG — BGP tutorials and talks (YouTube)](https://www.youtube.com/@TheNANOG) | Video | Advanced | Free |
+| [NANOG — operator talks and tutorials](https://www.nanog.org/) | Video | Advanced | Free |
 
 ## Bibliography
 

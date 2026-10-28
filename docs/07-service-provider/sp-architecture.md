@@ -36,7 +36,7 @@ An operator network is layered: access networks reach customers, aggregation con
 | [RIPE NCC Academy](https://academy.ripe.net/) | Course | Beginner | Free |
 | [PeeringDB](https://www.peeringdb.com/) | Database | Intermediate | Free |
 | [Euro-IX — IXP resources](https://www.euro-ix.net/) | Community | Intermediate | Free |
-| [NANOG — talks (YouTube)](https://www.youtube.com/@TheNANOG) | Video | Intermediate | Free |
+| [NANOG — operator talks and tutorials](https://www.nanog.org/) | Video | Intermediate | Free |
 
 ## Bibliography
 

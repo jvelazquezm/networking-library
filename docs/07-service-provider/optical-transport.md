@@ -31,7 +31,7 @@ Underneath every backbone, DWDM puts dozens of wavelengths on each fibre pair, a
 - [ITU-T G.694.1 — Spectral grids for WDM: DWDM frequency grid](https://www.itu.int/rec/T-REC-G.694.1)
 - [ITU-T G.709 — Interfaces for the optical transport network](https://www.itu.int/rec/T-REC-G.709)
 - [OIF — 400ZR and 800ZR implementation agreements](https://www.oiforum.com/)
-- [OpenROADM MSA](https://openroadm.org/)
+- [OpenROADM MSA — models and specifications (GitHub)](https://github.com/OpenROADM)
 
 ## Learning resources
 

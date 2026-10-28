@@ -35,7 +35,7 @@ _No single defining standard — this topic is mostly about design, practice or 
 | Resource | Type | Level | Cost |
 | --- | --- | --- | --- |
 | [Jeremy's IT Lab — Free CCNA course, Day 63: Ansible, Puppet and Chef](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ) | Video course | Beginner | Free |
-| [Ansible network automation guide](https://docs.ansible.com/ansible/latest/network/index.html) | Docs | Intermediate | Free |
+| [Ansible documentation (Network Automation guide)](https://docs.ansible.com/) | Docs | Intermediate | Free |
 | [Terraform documentation](https://developer.hashicorp.com/terraform/docs) | Docs | Intermediate | Free |
 
 ## Bibliography

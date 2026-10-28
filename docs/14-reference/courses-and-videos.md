@@ -23,7 +23,7 @@ Free first. Paid options are listed only where they add something the free ones 
 | [RIPE NCC Academy](https://academy.ripe.net/) | RIPE NCC | Beginner | IPv6, BGP, RPKI, DNS. |
 | [APNIC Academy](https://academy.apnic.net/) | APNIC | Beginner | IPv6, routing security, network operations. |
 | [Hurricane Electric IPv6 Certification](https://ipv6.he.net/certification/) | Hurricane Electric | Beginner | Hands-on IPv6 challenges. |
-| [NANOG talks (YouTube)](https://www.youtube.com/@TheNANOG) | NANOG | Intermediate | Operator talks on BGP, peering, automation, security. |
+| [NANOG talks](https://www.nanog.org/) | NANOG | Intermediate | Operator talks on BGP, peering, automation, security. |
 
 ## Paid options worth knowing
 

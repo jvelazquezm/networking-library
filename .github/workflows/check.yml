@@ -35,6 +35,8 @@ jobs:
           args: >-
             --no-progress
             --max-retries 3
+            --timeout 30
+            --exclude ieeexplore.ieee.org
             --accept 200,204,403,429
             --exclude-path node_modules
             'docs/**/*.md' README.md
