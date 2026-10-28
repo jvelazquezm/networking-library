@@ -1,0 +1,8 @@
+{
+  "label": "09 \u00b7 Data Center, Virtualization and Cloud",
+  "position": 10,
+  "collapsed": true,
+  "customProps": {
+    "description": "Virtualization, containers, SDN, leaf-spine fabrics, VXLAN/EVPN, campus fabrics, AI networking, data plane acceleration, NFV, Kubernetes, service mesh, public cloud and storage networking."
+  }
+}

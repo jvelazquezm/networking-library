@@ -1,0 +1,8 @@
+{
+  "label": "04 \u00b7 IP Routing",
+  "position": 5,
+  "collapsed": true,
+  "customProps": {
+    "description": "Route selection, static and dynamic routing, OSPF, IS-IS, EIGRP, BGP, redistribution, VRFs, FHRPs, fast convergence and multicast."
+  }
+}

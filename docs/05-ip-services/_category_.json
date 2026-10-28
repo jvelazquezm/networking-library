@@ -1,0 +1,8 @@
+{
+  "label": "05 \u00b7 IP Services",
+  "position": 6,
+  "collapsed": true,
+  "customProps": {
+    "description": "DHCP, DNS, NAT, time synchronisation, QoS, device management protocols and voice over IP."
+  }
+}

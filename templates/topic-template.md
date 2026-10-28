@@ -10,7 +10,11 @@ sidebar_position: 99
 
 ## Overview
 
-Two or three sentences explaining the topic in plain language.
+One paragraph explaining the topic in plain language: what it is, why it exists and where it is used.
+
+:::info Vendor notes
+Only if relevant: which parts are vendor-specific and what the standard equivalent is.
+:::
 
 ## Key concepts
 
@@ -20,7 +24,7 @@ Two or three sentences explaining the topic in plain language.
 
 ## Before you start
 
-- [Prerequisite topic](../01-fundamentals/network-models.md)
+- [Prerequisite topic](../01-fundamentals/osi-and-tcp-ip-models.md)
 
 ## Standards and specifications
 
@@ -28,18 +32,24 @@ Two or three sentences explaining the topic in plain language.
 
 ## Learning resources
 
+Free and open resources first. No affiliate links.
+
 | Resource | Type | Level | Cost |
 | --- | --- | --- | --- |
-| [Title (Author, year)](https://example.org/) | Book | Beginner | Free |
+| [Title (Author, year)](https://example.org/) | Open book | Beginner | Free |
+
+## Bibliography
+
+- *Book title* — Author names (Paid)
 
 ## Hands-on lab
 
-A concrete exercise someone can do on a laptop, with the tools from the Labs and tools page.
+A concrete exercise someone can do on a laptop with the tools on the Labs and tools page.
 
 ## Related topics
 
 - [Related topic](./other-topic.md)
 
-:::note Help grow this page
-This page is a starting point. Add resources, explanations, diagrams or labs by following the [contribution guide](../00-start-here/contributing.md).
+:::note Help improve this page
+Found a better free resource, a mistake or an outdated link? See the [contribution guide](../00-start-here/contributing.md).
 :::

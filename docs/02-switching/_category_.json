@@ -1,0 +1,8 @@
+{
+  "label": "02 \u00b7 Switching and Ethernet",
+  "position": 3,
+  "collapsed": true,
+  "customProps": {
+    "description": "Ethernet switching, VLANs, spanning tree, link aggregation, provider bridging, OAM and TSN."
+  }
+}

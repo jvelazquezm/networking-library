@@ -1,0 +1,8 @@
+{
+  "label": "07 \u00b7 Service Provider and Transport Networks",
+  "position": 8,
+  "collapsed": true,
+  "customProps": {
+    "description": "Operator architecture, MPLS, L3VPN, L2VPN, EVPN, traffic engineering, Segment Routing, SRv6, PCE, broadband access, optical transport, backhaul and timing."
+  }
+}

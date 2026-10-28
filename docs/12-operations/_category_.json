@@ -1,0 +1,8 @@
+{
+  "label": "12 \u00b7 Network Operations and Assurance",
+  "position": 13,
+  "collapsed": true,
+  "customProps": {
+    "description": "Troubleshooting methodology, monitoring with SNMP, syslog and flow data, observability stacks, active measurement, packet capture and network design."
+  }
+}

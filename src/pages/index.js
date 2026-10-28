@@ -2,14 +2,14 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
-import {sections, paths} from '../data/home';
+import {sections, paths, topicCount} from '../data/home';
 
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.hero}>
       <div className="container">
-        <p className={styles.eyebrow}>Open · Structured · Community-maintained</p>
+        <p className={styles.eyebrow}>Open · Vendor-neutral · Community-maintained</p>
         <h1 className={styles.title}>{siteConfig.title}</h1>
         <p className={styles.tagline}>{siteConfig.tagline}</p>
         <div className={styles.actions}>
@@ -18,6 +18,9 @@ function Hero() {
           </Link>
           <Link className="button button--secondary button--lg" to="/library/start-here/learning-paths">
             Pick a learning path
+          </Link>
+          <Link className="button button--secondary button--lg" to="/library/reference/certifications">
+            Certification maps
           </Link>
         </div>
       </div>
@@ -31,9 +34,9 @@ function SectionGrid() {
       <div className="container">
         <h2 className={styles.blockTitle}>Browse the library</h2>
         <p className={styles.blockLead}>
-          Twelve sections, ordered roughly from the bottom of the stack to the top. Every topic page
-          follows the same layout: overview, key concepts, standards, resources by level and a
-          hands-on lab.
+          {topicCount} topics in thirteen sections, from the basics to expert level, plus a reference
+          shelf. Every topic follows the same layout — overview, key concepts, standards, free
+          resources first, bibliography and a hands-on lab.
         </p>
         <div className={styles.grid}>
           {sections.map((s) => (
@@ -41,6 +44,7 @@ function SectionGrid() {
               <span className={styles.cardNum}>{s.num}</span>
               <h3 className={styles.cardTitle}>{s.title}</h3>
               <p className={styles.cardText}>{s.blurb}</p>
+              {s.count > 0 && <p className={styles.cardCount}>{s.count} topics</p>}
             </Link>
           ))}
         </div>

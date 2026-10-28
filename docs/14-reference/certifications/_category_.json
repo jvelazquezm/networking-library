@@ -1,0 +1,8 @@
+{
+  "label": "Certification maps",
+  "position": 6,
+  "collapsed": true,
+  "customProps": {
+    "description": "How certifications map onto the library."
+  }
+}

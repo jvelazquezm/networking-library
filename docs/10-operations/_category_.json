@@ -1,8 +1,0 @@
-{
-  "label": "10 \u00b7 Network Operations",
-  "position": 11,
-  "collapsed": true,
-  "customProps": {
-    "description": "Monitoring and observability, QoS, troubleshooting, performance and design."
-  }
-}

@@ -1,8 +1,8 @@
 {
-  "label": "01 \u00b7 Fundamentals",
+  "label": "01 \u00b7 Network Fundamentals",
   "position": 2,
   "collapsed": true,
   "customProps": {
-    "description": "Layered models, addressing, IPv4/IPv6 and the protocols every network depends on."
+    "description": "How networks and the Internet work: models, devices, addressing, IPv4, IPv6 and the core protocols."
   }
 }

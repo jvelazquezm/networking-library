@@ -1,0 +1,8 @@
+{
+  "label": "08 \u00b7 Mobile Networks",
+  "position": 9,
+  "collapsed": true,
+  "customProps": {
+    "description": "Cellular fundamentals, 4G, the 5G System, NR and NG-RAN, the 5G Core, IMS voice, Open RAN, slicing, private 5G, NTN and 6G."
+  }
+}

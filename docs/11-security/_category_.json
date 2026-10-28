@@ -1,0 +1,8 @@
+{
+  "label": "11 \u00b7 Security",
+  "position": 12,
+  "collapsed": true,
+  "customProps": {
+    "description": "Security concepts, cryptography, device hardening, ACLs, Layer 2 and IPv6 security, NAC, firewalls, MACsec, Zero Trust, routing security, DDoS, PQC and 5G security."
+  }
+}

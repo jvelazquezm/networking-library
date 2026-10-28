@@ -1,29 +1,34 @@
 # The Networking Library
 
-An open, structured and community-maintained library to learn computer networks and telecommunications — from first principles to 5G, Open RAN and cloud native networking.
+An open, vendor-neutral and community-maintained library to learn computer networks and telecommunications — from first principles to expert level, including Segment Routing, 5G, Open RAN and cloud native networking.
 
-The library does not try to replace books, courses or standards. It **organises** them: every topic says what to learn, where the authoritative specification lives, which resources are worth your time at each level, and how to practise.
+**Live site:** https://jvelazquezm.github.io/networking-library/
+
+The library does not try to replace books, courses or standards. It **organises** them: every topic explains what to learn, links the authoritative specifications, lists the best resources — **free and open resources first** — and suggests a hands-on lab.
 
 ## Structure
 
 | # | Section | Topics |
 | --- | --- | --- |
-| 00 | Start here — how to use, learning paths, glossary | — |
-| 01 | Fundamentals | 6 |
-| 02 | LAN and Switching | 6 |
-| 03 | Routing and Internet Architecture | 7 |
-| 04 | Transport and Applications | 7 |
-| 05 | Carrier and Transport Networks | 5 |
-| 06 | Mobile Networks | 9 |
-| 07 | Data Center and Cloud Native Networking | 7 |
-| 08 | Automation and Programmability | 6 |
-| 09 | Network Security | 7 |
-| 10 | Network Operations | 5 |
-| 11 | Reference — standards bodies, books, courses, labs and tools | 4 |
+| 00 | Start here — how to use, learning paths, glossary, contribution guide | — |
+| 01 | Network Fundamentals | 15 |
+| 02 | Switching and Ethernet | 11 |
+| 03 | Wireless and IoT | 6 |
+| 04 | IP Routing | 14 |
+| 05 | IP Services | 7 |
+| 06 | WAN, VPNs and Overlays | 7 |
+| 07 | Service Provider and Transport Networks | 13 |
+| 08 | Mobile Networks | 11 |
+| 09 | Data Center, Virtualization and Cloud | 13 |
+| 10 | Transport and Application Protocols | 7 |
+| 11 | Security | 15 |
+| 12 | Network Operations and Assurance | 6 |
+| 13 | Automation, Programmability and AI | 11 |
+| 14 | Reference — standards bodies, books, courses, labs, community, certification maps | — |
 
-Plus four learning paths: *Networking from zero*, *5G end to end*, *Cloud native networking* and *Network automation*.
+**136 topics** at three levels (Beginner, Intermediate, Advanced), six learning paths and **certification maps** for Cisco, Juniper, Nokia, Arista, Huawei and vendor-neutral certifications.
 
-Every topic page uses the same layout: **Overview → Key concepts → Before you start → Standards → Learning resources → Hands-on lab → Related topics**.
+Every topic page uses the same layout: **Overview → Key concepts → Before you start → Standards → Learning resources → Bibliography → Hands-on lab → Related topics**.
 
 ## Run it locally
 
@@ -37,7 +42,7 @@ npm run build    # production build; fails if any internal link is broken
 
 ## Publish on GitHub Pages
 
-1. Create a public repository on GitHub, for example `networking-library`.
+1. Create a public repository on GitHub, for example `networking-library` (already done for this project).
 2. Open `docusaurus.config.js` and set `GITHUB_USER` (and `REPO_NAME` if you chose another name).
 3. Push this project to the `main` branch.
 4. In the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
@@ -52,7 +57,7 @@ Want your own domain later? Add a `static/CNAME` file with the domain, update `u
 docs/                     All library content (Markdown)
   00-start-here/          How to use, learning paths, glossary, contribution guide
   01-fundamentals/ ...    One folder per section; index.md is the section overview
-  11-reference/           Standards bodies, books, courses, labs and tools
+  14-reference/           Standards bodies, books, courses, labs, community, certification maps
 templates/                Template for new topic pages
 src/pages/index.js        Homepage
 src/data/home.js          Section and path cards shown on the homepage

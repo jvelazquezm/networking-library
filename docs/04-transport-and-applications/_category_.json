@@ -1,8 +1,0 @@
-{
-  "label": "04 \u00b7 Transport and Applications",
-  "position": 5,
-  "collapsed": true,
-  "customProps": {
-    "description": "TCP, UDP, QUIC, DNS, HTTP, TLS and how content is delivered at scale."
-  }
-}

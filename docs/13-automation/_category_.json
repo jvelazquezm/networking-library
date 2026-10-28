@@ -1,0 +1,8 @@
+{
+  "label": "13 \u00b7 Automation, Programmability and AI",
+  "position": 14,
+  "collapsed": true,
+  "customProps": {
+    "description": "Management approaches, data formats, REST APIs, Ansible and Terraform, Python, templating and source of truth, YANG/NETCONF/RESTCONF, gNMI, on-box automation, NetDevOps and AI."
+  }
+}

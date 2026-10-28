@@ -12,7 +12,7 @@ const REPO_NAME = 'networking-library';
 const config = {
   title: 'The Networking Library',
   tagline:
-    'An open, structured library to learn computer networks and telecommunications — from first principles to 5G, Open RAN and cloud native.',
+    'An open, vendor-neutral library to learn computer networks and telecommunications — from first principles to expert level: Segment Routing, 5G, Open RAN and cloud native.',
   favicon: 'img/favicon.svg',
 
   url: `https://${GITHUB_USER}.github.io`,
@@ -77,6 +77,7 @@ const config = {
         items: [
           {type: 'docSidebar', sidebarId: 'librarySidebar', position: 'left', label: 'Library'},
           {to: '/library/start-here/learning-paths', label: 'Learning paths', position: 'left'},
+          {to: '/library/reference/certifications', label: 'Certifications', position: 'left'},
           {to: '/library/reference', label: 'Reference', position: 'left'},
           {to: '/library/start-here/glossary', label: 'Glossary', position: 'left'},
           {to: '/library/start-here/contributing', label: 'Contribute', position: 'right'},
@@ -101,8 +102,10 @@ const config = {
           {
             title: 'Reference',
             items: [
+              {label: 'Certification maps', to: '/library/reference/certifications'},
               {label: 'Standards bodies', to: '/library/reference/standards-bodies'},
               {label: 'Books', to: '/library/reference/books'},
+              {label: 'Courses & videos', to: '/library/reference/courses-and-videos'},
               {label: 'Labs & tools', to: '/library/reference/labs-and-tools'},
             ],
           },
@@ -110,6 +113,7 @@ const config = {
             title: 'Community',
             items: [
               {label: 'Contribute', to: '/library/start-here/contributing'},
+              {label: 'Community', to: '/library/reference/community'},
               {
                 label: 'Suggest a resource',
                 href: `https://github.com/${GITHUB_USER}/${REPO_NAME}/issues/new/choose`,

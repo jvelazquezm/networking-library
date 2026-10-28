@@ -1,0 +1,8 @@
+{
+  "label": "06 \u00b7 WAN, VPNs and Overlays",
+  "position": 7,
+  "collapsed": true,
+  "customProps": {
+    "description": "WAN technologies, GRE, IPsec, remote-access VPNs, DMVPN, SD-WAN and LISP."
+  }
+}

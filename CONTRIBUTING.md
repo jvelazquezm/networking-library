@@ -7,26 +7,36 @@ Thanks for helping build The Networking Library. The full guide is published on 
 - **Suggest a resource**: open an issue with the *Suggest a resource* template.
 - **Edit a page**: use the *Edit this page* link at the bottom of any page, or open a pull request.
 - **Propose a topic or learning path**: open an issue with the *Propose a topic* template first.
+- **Update a certification map** when a vendor changes its blueprint.
 
-## Resource format
+## Resource policy: open first
 
-Add a row to the **Learning resources** table of the topic page:
+1. **Free and open resources come first.** Paid resources are welcome when they add something unique and are always marked *Paid*.
+2. **No affiliate links.** Link directly to the publisher or product page.
+3. **Link, never copy.** No PDFs or copied text from copyrighted books, papers or courses.
+4. **State the version** (release, edition or year) for fast-moving areas.
+
+## Formats
+
+Learning resources table row:
 
 ```markdown
-| [Title (Author, year)](https://example.org/) | Book | Intermediate | Paid |
+| [Title (Author, year)](https://example.org/) | Open book | Intermediate | Free |
 ```
 
-- **Type**: Book, Book (open), Book (online), Course, Video, Articles, Docs, Reference, Exercises, Lab tool, Tool, Library, Open source, Guide
-- **Level**: Beginner, Intermediate, Advanced
-- **Cost**: Free, Freemium, Paid
+Bibliography entry:
 
-## Rules
+```markdown
+- *Book title* — Author names (Paid)
+```
 
-1. **Link, never copy.** No PDFs or copied text from copyrighted books, papers or courses.
-2. **State the version.** For fast-moving areas (5G, cloud native, automation) include the release, version or year.
-3. **Keep the page structure.** New topics start from `templates/topic-template.md`.
-4. **Check the build.** Run `npm run build` before opening a pull request; it fails on broken internal links.
-5. **Review AI-assisted text.** It is welcome, but a human must check it for accuracy.
+New topics start from `templates/topic-template.md`. Keep the headings so every page stays consistent.
+
+## Checks
+
+Run `npm run build` before opening a pull request — it fails on broken internal links. External links are checked by CI on every pull request and every week.
+
+AI-assisted contributions are welcome, but a human must check them for accuracy.
 
 ## Licence
 

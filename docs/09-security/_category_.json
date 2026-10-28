@@ -1,8 +1,0 @@
-{
-  "label": "09 \u00b7 Network Security",
-  "position": 10,
-  "collapsed": true,
-  "customProps": {
-    "description": "Firewalls, VPNs, Zero Trust, routing security, DDoS and 5G security."
-  }
-}
