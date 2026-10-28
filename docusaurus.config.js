@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 // Change these two values to match your GitHub account and repository name.
 // The site will be published at https://<GITHUB_USER>.github.io/<REPO_NAME>/
 // ---------------------------------------------------------------------------
-const GITHUB_USER = 'YOUR-GITHUB-USER';
+const GITHUB_USER = 'jvelazquezm';
 const REPO_NAME = 'networking-library';
 
 /** @type {import('@docusaurus/types').Config} */
