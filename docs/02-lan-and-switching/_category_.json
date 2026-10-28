@@ -1,0 +1,8 @@
+{
+  "label": "02 \u00b7 LAN and Switching",
+  "position": 3,
+  "collapsed": true,
+  "customProps": {
+    "description": "Ethernet, VLANs, spanning tree, link aggregation and Wi-Fi."
+  }
+}

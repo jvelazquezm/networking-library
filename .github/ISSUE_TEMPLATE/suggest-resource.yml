@@ -1,0 +1,53 @@
+name: Suggest a resource
+description: Propose a book, course, article, video or tool for a topic.
+labels: [resource]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Resource title and author
+      placeholder: "5G NR: The Next Generation Wireless Access Technology (Dahlman et al.)"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: topic
+    attributes:
+      label: Topic page it belongs to
+      placeholder: Mobile Networks → 5G NR and NG-RAN
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [Book, Course, Video, Articles, Docs, Reference, Exercises, Lab tool, Tool, Library, Open source, Guide]
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options: [Beginner, Intermediate, Advanced]
+    validations:
+      required: true
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost
+      options: [Free, Freemium, Paid]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it worth adding?
+      description: What does it do better than the resources already listed? Include the edition, release or year if relevant.
+    validations:
+      required: true

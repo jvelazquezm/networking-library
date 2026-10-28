@@ -1,0 +1,55 @@
+/* Global theme for The Networking Library. */
+
+:root {
+  --ifm-color-primary: #0b6e8a;
+  --ifm-color-primary-dark: #0a637c;
+  --ifm-color-primary-darker: #095d75;
+  --ifm-color-primary-darkest: #074d60;
+  --ifm-color-primary-light: #0c7998;
+  --ifm-color-primary-lighter: #0d7f9f;
+  --ifm-color-primary-lightest: #d6eef5;
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
+  --hero-glow: rgba(11, 110, 138, 0.14);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4fc3e0;
+  --ifm-color-primary-dark: #33b9da;
+  --ifm-color-primary-darker: #26b4d7;
+  --ifm-color-primary-darkest: #0b3f4d;
+  --ifm-color-primary-light: #6bcde6;
+  --ifm-color-primary-lighter: #78d1e8;
+  --ifm-color-primary-lightest: #a3e0ef;
+  --ifm-background-color: #0f1417;
+  --ifm-background-surface-color: #151c20;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --hero-glow: rgba(79, 195, 224, 0.12);
+}
+
+/* Topic metadata line ("Level · Section") */
+.topic-meta {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.topic-meta strong {
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Resource tables: keep them readable on narrow screens */
+.markdown table {
+  display: table;
+  width: 100%;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 700px) {
+  .markdown table {
+    display: block;
+    overflow-x: auto;
+  }
+}

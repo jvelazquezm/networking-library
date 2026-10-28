@@ -1,0 +1,8 @@
+{
+  "label": "07 \u00b7 Data Center and Cloud Native Networking",
+  "position": 8,
+  "collapsed": true,
+  "customProps": {
+    "description": "Leaf-spine fabrics, VXLAN/EVPN, SDN, NFV, Kubernetes networking and service meshes."
+  }
+}

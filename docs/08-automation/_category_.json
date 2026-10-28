@@ -1,0 +1,8 @@
+{
+  "label": "08 \u00b7 Automation and Programmability",
+  "position": 9,
+  "collapsed": true,
+  "customProps": {
+    "description": "YANG, NETCONF, gNMI, Python, Ansible, NetDevOps, intent and AI for networks."
+  }
+}

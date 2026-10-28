@@ -1,0 +1,24 @@
+name: Propose a topic or learning path
+description: Suggest a new topic page, a new section or a new learning path.
+labels: [proposal]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you proposing?
+      options: [New topic, New learning path, Restructure a section]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where does it fit, and why?
+      description: Which section (or which topics, for a path), and what gap it fills.
+    validations:
+      required: true

@@ -1,0 +1,8 @@
+{
+  "label": "03 \u00b7 Routing and Internet Architecture",
+  "position": 4,
+  "collapsed": true,
+  "customProps": {
+    "description": "IGPs, BGP, MPLS, Segment Routing and how the Internet is stitched together."
+  }
+}
