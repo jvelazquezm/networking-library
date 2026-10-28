@@ -29,7 +29,8 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v7
-      - uses: lycheeverse/lychee-action@v2
+      - id: lychee
+        uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --no-progress
@@ -38,8 +39,8 @@ jobs:
             --exclude-path node_modules
             'docs/**/*.md' README.md
           fail: ${{ github.event_name == 'pull_request' }}
-      - name: Open an issue with broken links (scheduled runs)
-        if: github.event_name == 'schedule' && env.lychee_exit_code != 0
+      - name: Open an issue with broken links (scheduled and manual runs)
+        if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@v5
         with:
           title: Broken external links found
